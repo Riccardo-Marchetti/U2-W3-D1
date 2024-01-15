@@ -54,6 +54,7 @@ class Pet {
 
 const lista = function (e) {
   const newlist = document.getElementById("list");
+  // newList.innerHTML = "";
   const newCol = document.createElement("div");
   newCol.innerHTML = `
     <div col d-flex flex-columns >
@@ -66,6 +67,11 @@ const lista = function (e) {
       </ul >
     </div>`;
   newlist.appendChild(newCol);
+
+  nameInput.value = "";
+  ownernameInput.value = "";
+  speciesInput.value = "";
+  breedInput.value = "";
 };
 
 const formreference = document.getElementsByTagName("form")[0];
